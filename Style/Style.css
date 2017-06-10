@@ -1,0 +1,932 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+@font-face {
+    font-family: roboto;
+    src: url(../Fonts/3966.ttf);
+}
+@font-face {
+    font-family: light;
+    src: url(../Fonts/3962.ttf);
+}
+@font-face {
+    font-family: roboto-medium;
+    src: url(../Fonts/3964.ttf);
+}
+@font-face {
+    font-family: roboto-thin;
+    src: url(../Fonts/3967.ttf);
+}
+@font-face{
+    font-family:morado;
+    src:url(../Fonts/8143.otf)
+}
+body {
+    background: rgb(74, 95, 124);
+}
+/*шапка нашого сайту-----------------------------------*/
+.header__menu {
+    width: 930px;
+    height: 60px;
+    position: relative;
+    background: white;
+    margin: 106px auto 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.header {
+    margin-bottom: 15px;
+}
+.menu__icon-left {
+    height: 60px;
+    width: 60px;
+    background: rgb(86, 204, 200);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+}
+
+.icon__left-img {
+    background-image: url(../Img/Menu%20Icon.png);
+    width: 25px;
+    height: 20px;
+    background-size: cover;
+}
+.header__menu-buttons {
+    width: 420px;
+    height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: none;
+    position: absolute;
+    margin-left: 30px;
+    top:0;
+    left:20px;
+    
+}
+.menu__allButtons {
+    height: 60px;
+    width: 20%;
+    line-height: 65px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    font-family: roboto;
+}
+
+.menu__allButtons>a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu__allButtons>a:hover {
+    color: aqua;
+}
+
+.menu__icon-right {
+    width: 420px;
+    height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    line-height: 60px;
+    color: rgb(178, 185, 189);
+    text-align: center;
+    position: absolute;
+    right:0;
+}
+
+.menu__icon-search {
+    height: 60px;
+    width: 50px;
+    font-size: 17px;
+    margin-left: -10px;
+}
+.menu__social-icon {
+    height: 60px;
+    width: 120px;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.social__icon {
+    height: 60px;
+    width: 33%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: rgb(178, 185, 189);
+}
+.social__icon-gplus {
+    background-image: url(../Img/G+%20Icon%20copy.png);
+    height: 17px;
+    width: 17px;
+    background-size: cover;
+    margin-left: -5px;
+}
+
+.menu__icon-last {
+    height: 60px;
+    width: 65px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+#about__menu{
+    margin-left: -15px;
+}
+.menu__last-img {
+    background-image: url(../Img/4uvak.png);
+    height: 17px;
+    width: 17px;
+    background-size: cover;
+}
+/*кінець головного меню-------------*/
+.main {
+    width: 930px;
+    min-height: 675px;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.menu__dropdown{
+    position: relative;
+}
+.menu__dropdown:hover .header__menu-buttons{
+    display: flex;
+}
+/*ліва частина сайту----*/
+.main__left {
+    width: 465px;
+    min-height: 674px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.aside {
+    width: 48%;
+    min-height: 674px;
+    background: white;
+}
+
+.section {
+    width: 52%;
+    min-height: 674px;
+    background: rgb(21, 40, 64);
+}
+
+/*права частина сайту----*/
+.main__right {
+    width: 450px;
+    min-height: 600px;
+    /*
+    display: flex;
+    justify-content: space-between;
+*/
+}
+.article__flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.article__social {
+    height: 315px;
+    width: 218px;
+    background: white;
+}
+
+.article__social-right {
+    width: 218px;
+    height: 315px;
+}
+
+.social__right-face {
+    width: 218px;
+    height: 150px;
+    background: rgb(77, 107, 170);
+    padding-top: 24px;
+}
+
+.social__right-twit {
+    width: 218px;
+    height: 150px;
+    background: rgb(79, 198, 248);
+    margin-top: 15px;
+    padding-top: 25px;
+}
+.face{
+    margin-right: -10px;
+}
+.section__right {
+    margin-top: 15px;
+    width: 100%;
+    height: 165px;
+    background: white;
+    display: block;
+}
+.section__right-bottom {
+    margin-top: 13px;
+    width: 100%;
+    height: 165px;
+    background: white;
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+    font-family: roboto;
+}
+/*ліва частина ессайд вверх----------*/
+.aside__top {
+    width: 100%;
+    height: 425px;
+}
+.aside__allContent {
+    width: 100%;
+    height: 61px;
+    border-bottom: 1px solid grey;
+    line-height: 61px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.aside__allContent:hover{
+  background: rgb(86, 204, 200);
+}
+.blog {
+    background: rgb(86, 204, 200);
+    color: white;
+}
+#blog__aside{
+  
+}
+
+.aside__allContent>a {
+    text-decoration: none;
+    font-size: 16px;
+    font-family: roboto;
+    margin-left: 22px;
+    word-spacing: 0px;
+    letter-spacing: 0;
+}
+.aside__allImg {
+    margin-left: 18px;
+    height: 22px;
+    width: 25px;
+    background-repeat: no-repeat;
+}
+.aside__img-one {
+    background-image: url(../Img/Home%20icon.png);
+}
+.aside__img-two {
+    background-image: url(../Img/Shop%20icon.png);
+}
+.aside__img-three {
+    background-image: url(../Img/Note%20icon.png);
+    background-repeat: no-repeat;
+}
+.aside__img-four {
+    background-image: url(../Img/Users%20icon.png);
+    height: 20px;
+}
+
+.aside__img-five {
+    background-image: url(../Img/Trophy%20icon.png);
+}
+
+.aside__img-six {
+    background-image: url(../Img/Info%20icon.png);
+}
+.aside__img-seven {
+    background-image: url(../Img/Email%20Icon.png);
+    height: 17px;
+}
+
+/*ліва частина ессайд низ------------------*/
+.aside__bottom {
+    width: 100%;
+    height: 250px;
+    background: rgb(197, 205, 209);
+    padding-top: 12px
+}
+.aside__bottom-all {
+    width: 100%;
+    height: 75px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+}
+.bottom__img-call {
+    height: 30px;
+    width: 30px;
+    background-image: url(../Img/Phone%20icon.png);
+    background-repeat: no-repeat;
+    margin-left: 20px;
+}
+
+.aside__bottom-number {
+    width: 105px;
+    height: 35px;
+    color: white;
+    margin-left: 13px;
+}
+.bottom__img-pointer {
+    height: 25px;
+    width: 25px;
+    background-image: url(../Img/Pointer%20icon.png);
+    background-repeat: no-repeat;
+    top:12px;
+    left:25px;
+    position: absolute;
+}
+
+.pointer__text {
+    color: white;
+    width: 135px;
+    font-family: roboto;
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 65px;
+}
+.bottom__img-message {
+    height: 25px;
+    width: 25px;
+    background-image: url(../Img/message-icon%20.png);
+    background-repeat: no-repeat;
+    margin-left: 23px;
+}
+.message__text {
+    color: white;
+    width: 135px;
+    font-family: roboto;
+    font-size: 14px;
+    margin-left: 17px;
+}
+/*кінець лівої частини ессайд початок лівої частини скшин*/
+.section__top {
+    width: 100%;
+    height: 160px;
+    border-bottom: 0.5px solid grey;
+    display: block;
+    padding: 20px 0 0 34px;
+    position: relative;
+}
+.section__top>p {
+    margin-top: 15px;
+    color: white;
+    line-height: 16px;
+    font-family: light;
+    font-size: 14px;
+    word-spacing: 1px;
+}
+.setion_top-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: aqua;
+    font-family: sans-serif;
+    position: relative;
+    margin-top: 5px;
+}
+.section__icon-top {
+    position: absolute;
+     right: 19px;
+    top:-4px;
+}
+.section__two {
+    width: 100%;
+    height: 190px;
+    background: rgb(38, 58, 84);
+    border-bottom: 0.5px solid grey;
+    padding: 20px 0 0 35px;
+    position: relative;
+}
+.section__two>p {
+    font-size: 15px;
+    line-height: 16px;
+    color: white;
+    margin-top: 15px;
+    font-family: light;
+}
+.section__icon-two{
+      
+    background-size: cover;
+    margin-left: 70px;
+}
+.section__all-icon{
+     height: 20px;
+    width: 20px;
+    background-image: url(../Img/arrow1.png);
+    background-size: cover;
+}
+.section__icon-three{
+
+    background-size: cover;
+    margin-left: 102px;
+}
+.section__icon-four{
+
+    background-size: cover;
+    margin-left: 110px;
+    margin-top: -5px;
+}
+.section__two-last>p {
+   color: white;
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: light;
+}
+
+.section__two-last {
+    width: 99%;
+    height: 162px;
+    border-bottom: 0.5px solid grey;
+    padding: 20px 0 0 35px;
+    position: relative;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+/*Початок правої частини сайту--------*/
+.article__face-img{
+    height: 32px;
+    width: 32px;
+    background-image: url(../Img/Base1.png);
+    margin-right: 23px;
+}
+.article__twit-img{
+    height: 32px;
+    width: 32px;
+    background-image: url(../Img/Base2.png);
+    margin-right: 23px;
+}
+.article__social-face{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 140px;
+    height: 32px;
+    font-family: roboto;
+    line-height: 32px;
+}
+.article__social{
+    padding: 30px 0 0 26px;
+}
+.article__face-icon{
+    background-image: url(../Img/Facebook%20Icon2.png);
+    height: 15px;
+    width: 10px;
+    margin: 7px auto;
+    background-repeat: no-repeat;
+    
+}
+.article__twit-icon{
+    background-image: url(../Img/Twitter%20Icon1.png);
+    height: 15px;
+    width: 15px;
+    margin: 11px auto;
+    background-repeat: no-repeat;
+}
+.article__social-twit{
+    margin-top: 22px;
+       display: -webkit-box;
+       display: -ms-flexbox;
+       display: flex;
+    width: 140px;
+    height: 32px;
+    font-family: roboto;
+    line-height: 30px;
+    color: aqua;
+}
+
+.article__social-all{
+        margin-top: 25px;
+       display: -webkit-box;
+       display: -ms-flexbox;
+       display: flex;
+    width: 140px;
+    height: 32px;
+    font-family: roboto;
+    line-height: 30px;
+    color: black;
+}
+.article__google-icon,.article__pinterest-icon,.article__rss-icon{
+    background-image: url(../Img/G+%20Icon.png);
+    height: 18px;
+    width: 17px;
+    margin: 7px auto;
+    background-repeat: no-repeat;
+}
+.article__rss-icon{
+    background-image: url(../Img/Rss%20Icon.png);
+  
+}
+.article__pinterest-icon{
+    background-image: url(../Img/Pinterest%20Icon.png);
+}
+/*right__face-img po4atok-------*/
+.right__face-img{
+    height: 60px;
+    width: 45px;
+    background-image: url(../Img/Facebook-big.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    margin-left: 25px;
+}
+.right__face-text{
+    height: 35px;
+    font-family: roboto;
+    color: white;
+    margin: 20px 0 0 20px;
+    line-height: 35px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+}
+.text__follow{
+    margin-left: 60px;
+}
+.right__face-plus{
+    height: 35px;
+    width: 35px;
+    background-image: url(../Img/Follow.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 7px;
+    top:6px;
+}
+/*Початок правої частини з твітером*/
+.right__twit-img{
+    height: 45px;
+    width: 50px;
+    background-image: url(../Img/Twitter-big.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    margin-left: 20px;
+    
+}
+.right__twit-text{
+      height: 35px;
+    font-family: roboto;
+    color: white;
+    margin: 23px 0 0 20px;
+    line-height: 55px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+}
+.text__following{
+       margin-left: 50px;
+}
+.right__twit-plus{
+      height: 35px;
+    width: 35px;
+    background-image: url(../Img/Follow%20user.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 7px;
+    top:14px;
+}
+/*po4atok siction right------*/
+.section__right{
+    text-align: center;
+    font-family: roboto;
+    padding-top: 20px;
+}
+.section__right-text{
+   margin-top: 10px;
+    font-size: 14.5px;
+    font-weight: 100;
+}
+.section__right-icon{
+    height: 40px;
+    width: 235px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 26px auto 0;
+}
+.right__allIcon{
+    height: 35px;
+    width: 35px;
+    background-image: url(../Img/Base%20sign.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    margin-left: 20px;
+}
+.allicon-face{
+    background-image: url(../Img/Facebook%20sign.png);
+    height: 17px;
+    width: 17px;
+    background-size: auto;
+    background-repeat: no-repeat;
+    margin: 9px 0 0 12px ;
+}
+.r-twit{
+    background-image: url(../Img/Base2.png);
+}
+.img-twit{
+    background-image: url(../Img/Twitter%20Icon1.png);
+    margin: 10px auto 0;
+}
+.b-google{
+    background-image: url(../Img/Base_red.png);
+}
+.img-gpl{
+    background-image: url(../Img/G+%20Icon_s.png);
+    margin-left: 8px;
+}
+.b-in{
+    background-image: url(../Img/Base4.png);
+}
+.img-in{
+    background-image: url(../Img/LinkedIn%20icon.png);
+    margin-left: 7px;
+}
+.right__bottom-text{
+    font-size: 12.5px;
+    margin-top: 12px;
+    font-family: morado;
+}
+
+.section-form{
+    margin: 25px 0 0 0;
+    display: block;
+}
+.section-input{
+    height: 39px;
+    width: 288px;
+    font-family: roboto;
+    font-size: 16px;
+    padding-left: 16px;
+}
+.section__button{
+    margin-left: 13px;
+    height: 39px;
+    width: 98px;
+    border-radius: 5px;
+    background: rgb(234,96,96);
+    border: none;
+    font-size: 15px;
+    color: white;
+    font-family: roboto;
+}
+/*Початок футер----------------*/
+.footer{
+    height: 450px;
+    width: 930px;
+    background: rgb(120,120,120);
+    margin: 55px auto 0;
+    position: relative;
+}
+.footer__text-one{
+    font-size: 46px;
+    font-family: light;
+    color: white;
+    line-height: 44px;
+    margin-left: 58px;
+}
+.footer_two-text{
+    width: 360px;
+    height: 65px;
+    margin: 27px 0 0 60px;
+}
+.footer__text-two{
+    font-family: roboto-thin;
+    color: white;
+    font-size: 14px;
+    line-height: 24px;
+    white-space: pre-wrap;
+    
+}
+
+.footer__icon-base{
+    width: 35px;
+    height: 52px;
+    background-image: url(../Img/Base-footer.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    position: absolute;
+    top: 173px;  
+}
+.icon__base-two{
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    right: 0;
+}
+.footer__icon{
+    height: 20px;
+    width: 15px;
+    margin: 20px auto 0;
+    background-image: url(../Img/arrow.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+.footer__text-wiev{
+    width: 170px;
+    height: 52px;
+    border: 1px solid white;
+    border-radius: 2px;
+    margin: 38px 0 0 58px;
+    font-family: roboto-medium;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    line-height: 52px;
+}
+
+
+.footer__form{
+    margin-top: 152px;
+    text-align: center;
+}
+/*hoveru saitu---------*/
+.menu__icon-search:hover{
+  font-size: 20px;
+}
+.social__icon:hover{
+      font-size: 20px;
+}
+.menu__last-img:hover, .social__icon-gplus:hover{
+    width: 19px;
+    height: 19px;
+}
+/*Медіа скріни початок--------------------*/
+
+@media screen and (min-width: 850px) and (
+max-width: 955px){
+    .header__menu{
+        width: 90%;
+        margin-top: 10px;
+    }
+    .main{
+        width: 90%;
+        justify-content: flex-start;
+        margin: auto;
+    }
+    .main__left{
+        width: 400px;
+    }
+    .main__right{
+        width: 400px;
+        margin-left: 10px;
+    }
+    .section__all-icon{
+        position: absolute;
+        right:10px;
+        top:10px;
+    }
+    .section-form{
+        margin: 5px 0 0 0 ;
+    }
+    .section__button{
+        margin: 3px auto 0;
+    }
+    .footer{
+        width: 90%;    
+    }
+    .bottom__img-call,.bottom__img-pointer,.bottom__img-message{
+        display: none;
+    }
+    .pointer__text{
+        margin-left: 13px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 849px){
+      .header__menu{
+        width: 90%;
+        margin-top: 10px;
+    }
+    .main{
+        width: 90%;
+        justify-content: flex-start;
+        margin: auto;
+    }
+    .main__left{
+        width: 400px;
+    }
+    .main__right{
+        width: 350px;
+    }
+    .social__right-face{
+        width: 180px;
+    } 
+    .social__right-twit{
+        width: 180px;
+    }
+    .text__follow{
+        margin-left: 5px;
+    } 
+    .text__following{
+        margin-left: 5px;
+    }
+       .section-form{
+        margin: 5px 0 0 0 ;
+    }
+    .section__button{
+        margin: 3px auto 0;
+    }
+    .footer{
+        width: 90%;    
+    }
+    .bottom__img-call,.bottom__img-pointer,.bottom__img-message{
+        display: none;
+    }
+    .pointer__text{
+        margin-left: 13px;
+    }
+     .section__all-icon{
+        position: absolute;
+        right:10px;
+        top:10px;
+    }
+}
+@media screen and (max-width: 767px){
+    .main{
+        display: block;
+        width: auto;
+        margin: auto;
+    }
+    .main__left{
+        margin: auto;
+        width: 90%;
+    }
+    .main__right{
+        margin: 10px auto 0;
+        width: 90%;
+    }
+     .header__menu{
+        width: 90%;
+        margin-top: 10px;
+    }
+    .header__menu-buttons{
+        width: 320px;
+    }
+    .article__social{
+        width: 48%;
+    }
+    .article__social-right{
+        width: 50%;
+    }
+    .social__right-face{
+width: 100%;
+    }
+    .social__right-twit{
+width: 100%;
+    }
+      .section__all-icon{
+        position: absolute;
+        right:10px;
+        top:10px;
+    }
+      .footer{
+        width: 90%;    
+    }
+}
